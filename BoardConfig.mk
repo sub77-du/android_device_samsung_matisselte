@@ -21,7 +21,8 @@ DEVICE_PATH := device/samsung/matisselte
 
 # Kernel
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
-TARGET_KERNEL_CONFIG := cyanogenmod_matisselte_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_matisse_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := cyanogenmod_matisselte_defconfig
 
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2097152000
