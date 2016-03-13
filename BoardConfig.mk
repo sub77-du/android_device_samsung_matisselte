@@ -33,14 +33,5 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
-# RIL
-BOARD_VENDOR := samsung
-BOARD_MOBILEDATA_INTERFACE_NAME := "rmnet0"
-BOARD_PROVIDES_LIBRIL := true
-#TARGET_RIL_VARIANT := caf
-
-# RIL Class (for correct tech assignment)
-BOARD_RIL_CLASS := ../../../device/samsung/matisselte/ril
-
 # inherit from the proprietary version
 -include vendor/samsung/matisselte/BoardConfigVendor.mk
