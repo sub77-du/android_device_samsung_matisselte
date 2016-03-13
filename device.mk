@@ -22,5 +22,9 @@ $(call inherit-product-if-exists, vendor/samsung/matisselte/matisselte-vendor.mk
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Radio
+PRODUCT_PROPERTY_OVERRIDES += \
+   ro.telephony.ril_class=SamsungMSM8226RIL
+
 # common matisse
 $(call inherit-product, device/samsung/matisse-common/matisse.mk)
