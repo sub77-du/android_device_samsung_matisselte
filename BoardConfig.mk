@@ -15,17 +15,12 @@
 # inherit from matisse-common
 -include device/samsung/matisse-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := matisselte,matisseltexx
+TARGET_OTA_ASSERT_DEVICE := matisselte
 
 DEVICE_PATH := device/samsung/matisselte
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_matisse_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := cyanogenmod_matisselte_defconfig
-
-# Partitions
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2097152000
-TARGET_USERIMAGES_USE_F2FS := true
+TARGET_KERNEL_VARIANT_CONFIG := du_matisselte_defconfig
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
